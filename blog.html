@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./A5-Dev-Board/assets/logo.png" alt="DevBoard Logo" />
+        <h1>Dev<span>Board</span></h1>
+      </div>
+      <div class="header-right">
+        <a href="./index.html"
+          ><button class="back-btn">Back to desk</button></a
+        >
+      </div>
+    </header>
+
+    <main>
+      <h1>BLOG</h1>
+      <div class="blog-container">
+        <div class="question">
+          <h2>1. What are the different ways to select an element in the DOM?</h2>
+          <hr>
+          <p>
+        You can select elements using methods like
+        <code>getElementById()</code>, <code>getElementsByClassName()</code>,
+        <code>getElementsByTagName()</code>, <code>querySelector()</code>, and
+        <code>querySelectorAll()</code>.
+          </p>
+        </div>
+
+        <div class="question">
+          <h2>2. What is the difference between innerHTML, innerText, and textContent?</h2>
+          <hr>
+          <p>
+        <strong>innerHTML:</strong> Gets or sets the HTML content of an
+        element.
+          </p>
+          <p>
+        <strong>innerText:</strong> Gets or sets the visible text, excluding
+        hidden elements.
+          </p>
+          <p>
+        <strong>textContent:</strong> Gets or sets the text, including hidden
+        elements, without formatting.
+          </p>
+        </div>
+
+        <div class="question">
+          <h2>3. What is event delegation in the DOM?</h2><hr>
+          <p>
+        Event delegation is a technique where a parent element handles events
+        for its children using event bubbling. This is useful for dynamically
+        added elements.
+          </p>
+        </div>
+
+        <div class="question">
+          <h2>4. What is event bubbling in the DOM?</h2><hr>
+          <p>
+        Event bubbling is a mechanism where an event starts from the target
+        element and propagates up to its ancestors, allowing handlers on
+        parent elements to react.
+          </p>
+        </div>
+
+        <div class="question">
+          <h2>5. How do you create, add, and remove elements using JavaScript?</h2><hr>
+          <p>
+        You can create an element using <code>document.createElement()</code>,
+        add it using <code>appendChild()</code> or
+        <code>insertBefore()</code>, and remove it using
+        <code>removeChild()</code> or <code>remove()</code>.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

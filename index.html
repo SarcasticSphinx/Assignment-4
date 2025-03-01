@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./A5-Dev-Board/assets/logo.png" alt="DevBoard Logo" />
+        <h1>Dev<span>Board</span></h1>
+      </div>
+      <div class="header-right">
+        <div class="notification">
+          <img src="./A5-Dev-Board/assets/checkbox.png" alt="Checkbox" />
+          <span id="task-done-count">0</span>
+        </div>
+        <div id="theme-toggle">
+          <img src="./A5-Dev-Board/assets/theme-btn.png" alt="Theme Toggle" />
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="left-container">
+        <div class="main-content">
+          <div class="dashboard-header">
+            <div class="task-assigned">
+              <div class="checkbox-container">
+                <img src="./A5-Dev-Board/assets/checkbox.png" alt="Checkbox" />
+              </div>
+              <div class="task-info">
+                <p>Task Assigned</p>
+                <h2 id="remaining-task-count">06</h2>
+              </div>
+            </div>
+
+            <a href="./blog.html" class="discovery-link"><div class="discovery-banner">
+              <div class="discovery-icon">
+                <img src="./A5-Dev-Board/assets/board.png" alt="Discovery" />
+              </div>
+              <div class="discovery-text">
+                <p>Discover Something</p>
+                <p>New Today!</p>
+              </div>
+            </div></a>
+
+            <div class="date-display">
+              <div class="calendar-icon">
+                <img src="./A5-Dev-Board/assets/calender.png" alt="Calendar" />
+              </div>
+              <div class="date-info">
+                <p id="day"></p>
+                <p id="date"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tasks-grid">
+            <!-- Task Card 1 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">ShopEase</p>
+                <h3 class="task-title">Fix Mobile Button Issue</h3>
+                <p class="task-description">
+                  Debug using Chrome DevTools, check for overlapping elements
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button
+                  data-taskName="Fix Mobile Button Issue"
+                  class="completed-btn"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!-- Task Card 2 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">CloudSync</p>
+                <h3 class="task-title">Add Dark Mode</h3>
+                <p class="task-description">
+                  Store the user's preference in localStorage, update CSS
+                  variables
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button data-taskName="Add Dark Mode" class="completed-btn">
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!-- Task Card 3 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">SwiftPay</p>
+                <h3 class="task-title">Optimize Home page</h3>
+                <p class="task-description">
+                  Debug using Chrome DevTools, check for overlapping elements
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button
+                  data-taskName="Optimize Home page"
+                  class="completed-btn"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!-- Task Card 4 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">Meta</p>
+                <h3 class="task-title">Add new emoji 👋</h3>
+                <p class="task-description">
+                  Debug using Chrome DevTools, check for overlapping elements
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button data-taskName="Add new emoji 👋" class="completed-btn">
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!-- Task Card 5 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">Google LLC</p>
+                <h3 class="task-title">Integrate OpenAI API</h3>
+                <p class="task-description">
+                  Debug using Chrome DevTools, check for overlapping elements
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button
+                  data-taskName="Integrate OpenAI API"
+                  class="completed-btn"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+
+            <!-- Task Card 6 -->
+            <div class="task-card">
+              <div class="card-header">
+                <p class="company">Glassdoor</p>
+                <h3 class="task-title">Improve Job searching</h3>
+                <p class="task-description">
+                  Debug using Chrome DevTools, check for overlapping elements
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="deadline">
+                  <p>Deadline</p>
+                  <p class="date">21 March 2025</p>
+                </div>
+                <button
+                  data-taskName="Improve Job searching"
+                  class="completed-btn"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="activity-section">
+          <div class="activity-header">
+            <div class="activity-title">
+              <img src="/A5-Dev-Board/assets/activity.png" alt="Activity" />
+              <h3>Activity Log</h3>
+            </div>
+            <button id="clear-btn">Clear History</button>
+          </div>
+          <div id="activity-logs"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
