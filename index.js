@@ -47,7 +47,7 @@ function updateActivityLogs(task) {
   activity_log.push(task);
   const HTML = activity_log
     .map((log) => {
-      return `<p class="log-entry">You have completed the task "${log}" at ${new Date().toLocaleString()}</p>`;
+      return `<p class="log-entry">You have completed the task "${log}" at ${new Date().toLocaleTimeString()}</p>`;
     })
     .join("");
 
@@ -62,7 +62,6 @@ completed_btn.forEach((btn) => {
     taskCompleted();
     updateActivityLogs(task);
 
-    // Disable the clicked button
     event.target.disabled = true;
     event.target.classList.add("disabled");
 
